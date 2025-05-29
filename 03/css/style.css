@@ -1,0 +1,536 @@
+@charset "utf-8";
+
+.wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header 네비게이션 시작*/
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: .5s;
+    z-index: 100;
+    display: none;
+}
+
+header.active {
+    display: block;
+}
+
+header.on {
+    top: -80px;
+}
+
+header nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+ul.main_gnb {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+ul.main_gnb li>a {
+    position: relative;
+}
+
+ul.main_gnb li>a:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    margin: auto;
+    background: var(--point-col);
+    z-index: 1;
+    transition: ease all 0.3s;
+    transition: ease all 0.3s;
+    -moz-transition: ease all 0.3s;
+    -ms-transition: ease all 0.3s;
+    -o-transition: ease all 0.3s;
+}
+
+/* main-gnb hover 할 때 파란색 라인 */
+
+ul.main_gnb li>a.current::after,
+ul.main_gnb li>a:hover::after {
+    width: 100%
+}
+
+ul.main_gnb:hover li a {
+    color: #555
+}
+
+/* main-gnb hover시에 나머지 메뉴 색상 #555 */
+ul.main_gnb li a:hover {
+    text-decoration: none;
+    color: var(--white2-col)
+}
+
+
+ul.main_gnb li>a {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--black1-col);
+    transition: .6s;
+    font-family: var(--en-p-font);
+}
+
+ul.main_gnb li:hover a {
+    font-weight: 400;
+}
+
+/* Header 네비게이션 끝*/
+
+
+/* Performance 시작 */
+
+.performance {
+    width: 100%;
+    height: 530vh;
+    background: var(--main-col);
+}
+
+.bg_gra1 {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, var(--white1-col) 20%, var(--main-col) 80%);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.simply-scroll {
+    width: 100%;
+}
+
+.simply-scroll .simply-scroll-clip {
+    overflow: hidden;
+}
+
+.sticky_title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.sticky_title .list {
+    display: flex;
+    width: 100%;
+    z-index: 5;
+    position: relative;
+}
+
+.sticky_title .list li {
+    font-family: var(--kr-p-font);
+    font-size: 1.8rem;
+    font-weight: 200;
+    /* width: 100%; */
+    flex-shrink: 0;
+    margin-right: 100px;
+}
+
+.sticky_title>h2 {
+    font-size: 20rem;
+    font-family: var(--en-p-font);
+    font-weight: 800;
+    color: rgba(182, 182, 182, 0.2);
+    padding-top: 120px;
+}
+
+.card_frame {
+    position: absolute;
+    width: 95vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+.card {
+    width: 23%;
+    height: 95%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transform-style: preserve-3d;
+    position: relative;
+    transform: perspective(100vw) translateX(100vw) rotateY(180deg);
+    transition: transform 0.1s;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    cursor: default;
+}
+
+.front {
+    background: var(--white1-col);
+    color: var(--main-col);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.front>h3 {
+    font-family: var(--en-h-font);
+    font-size: 5.2rem;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.front>p {
+    font-family: var(--kr-p-font);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: var(--main-col);
+    border: 1px solid var(--white1-col);
+    background-size: 100%;
+    font-family: var(--en-h-font);
+    font-size: 6rem;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (orientation:portrait) {
+    .card_frame {
+        display: grid;
+        height: initial;
+        width: initial;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10vw;
+        justify-items: center;
+    }
+
+    .card {
+        font-size: 20vw;
+        width: 35vw;
+        height: 50vw;
+    }
+}
+
+/* Performance 끝 */
+
+
+/* Skills 시작 */
+.skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--main-col);
+}
+
+/* skill_text 떨어짐 */
+.playground {
+    font-family: var(--en-p-font);
+    font-size: 2.4rem;
+    width: 80%;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#helper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.menu_item {
+    border-radius: 1.5em;
+    box-shadow: inset 0 0 0 0.1em currentColor;
+    font-size: 1.6rem;
+    position: absolute;
+    padding: 0.75em 1em;
+    cursor: default;
+}
+
+.menu_item:hover {
+    background-color: var(--bg-t-col);
+}
+
+.skills .text {
+    width: 90%;
+    height: 1000px;
+}
+
+.skills .skill_box {
+    width: 100%;
+    height: 480px;
+    padding-top: 40px;
+}
+
+.skills h2 {
+    font-size: 12rem;
+    color: var(--bg-t-col);
+    font-family: var(--en-h-font);
+    font-style: italic;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.skills h2 b {
+    font-family: var(--en-p-font);
+    font-style: normal;
+}
+
+.skills .skill_tit h2 {
+    font-family: var(--en-p-font);
+}
+
+.skills .pg_skill {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    color: var(--point-col);
+    font-family: var(--en-p-font);
+    font-size: 1.5rem;
+}
+
+.bg_gra2 {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, var(--main-col) 20%, var(--white1-col) 80%);
+}
+
+/* Skills 끝 */
+
+
+/* closing_txt 시작 */
+.closing_txt {
+    margin: 0;
+    padding: 0;
+    font-family: var(--kr-p-font);
+    background-color: var(--white1-col);
+}
+
+ul.scroll_text_all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 150vh;
+    margin: 0 5%;
+}
+
+ul.scroll_text_all .scroll_text {
+    font-size: 5.5rem;
+    line-height: 7rem;
+    font-weight: 200;
+    letter-spacing: -0.01em;
+    margin: 0;
+    width: 100%;
+    color: var(--bg-t-col);
+    background: linear-gradient(to right, var(--bg-col), var(--bg-col)) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0%;
+    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+ul.scroll_text_all .scroll_text p {
+    font-weight: 600;
+}
+
+/* closing_txt 끝 */
+
+
+/* thanks 시작 */
+.thanks {
+    width: 100%;
+    height: 100vh;
+    background: var(--white1-col);
+    color: var(--main-col);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thanks .license {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-top: 80px;
+    padding-right: 30px;
+    text-align: right;
+    color: var(--bg-col);
+}
+
+.thanks .license h4 {
+    font-family: var(--en-p-font);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.thanks .license p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.thanks .thanks_tit {
+    height: 100px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding-bottom: 100px;
+}
+
+.thanks .thanks_tit h2 {
+    width: 820px;
+    font-size: 5rem;
+    line-height: 6rem;
+    font-weight: 400;
+    font-family: var(--en-p-font);
+    color: var(--bg-col);
+}
+
+.thanks .thanks_tit::after {
+    background-color: var(--point-col);
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transition: all 0.25s ease-in-out;
+    width: 0;
+    height: 2em;
+    z-index: -1;
+}
+
+.thanks .thanks_tit:hover::after {
+    width: 80%;
+}
+
+
+.thanks .thanks_txt {
+    width: 4000px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.thanks .thanks_txt p {
+    width: 550px;
+    font-size: 1.5rem;
+    font-family: var(--en-h-font);
+    font-style: italic;
+    color: var(--point-col);
+}
+
+/* thanks 끝 */
+
+
+/* 스크롤 다운 모션 시작 */
+.scroll_down.visible {
+    display: block;
+    /* 클래스가 추가되면 표시 */
+    /* 필요에 따라 애니메이션이나 추가 스타일 설정 */
+}
+
+.scroll_down {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 25px;
+    border-radius: 15px;
+    border: 2px solid var(--white2-col);
+    z-index: 999;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 45%;
+        transform: translateX(-50%), translateY(0);
+        height: 8px;
+        width: 2px;
+        background: var(--white2-col);
+        animation: scroll 1s ease-in-out infinite alternate;
+    }
+
+    &::after {
+        content: "Scroll down";
+        position: absolute;
+        bottom: -25px;
+        left: -105%;
+        font-family: var(--en-p-font);
+        font-size: 1rem;
+        color: var(--white2-col);
+        width: 80px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(6px);
+    }
+}
+
+/* 스크롤 다운 모션 끝 */

@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow");
+
+/* intro 시작 */
+
+/* 페이드 효과 */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out; /* 페이드아웃 애니메이션 */
+}
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease-in; /* 초기 페이드인 */
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* intro_34km 퍼센트모션 */
+.intro_slogan {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.intro_slogan .slogan_txt p {
+  font-size: 2.2rem;
+  line-height: 5.5rem;
+  font-weight: 200;
+  font-family: var(--kr-p-font);
+}
+
+.intro_slogan .slogan_txt p.number {
+  font-size: 4.5rem;
+  font-family: var(--en-h-font);
+  font-style: italic;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 25px;
+}
+
+.intro_slogan .slogan_txt .number_animate {
+  display: block;
+  width: 200px;
+  font-size: 10rem;
+  text-align: right;
+  font-family: var(--en-h-font);
+  font-style: italic;
+  animation-duration: .3s;
+}
+
+.intro_slogan .scroll_down {
+  position: absolute;
+  bottom: 80px;
+  opacity: 0;
+}
+
+.intro_slogan .scroll_down.on {
+  opacity: 1;
+}
+
+.intro_slogan .it_scroll button {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--white1-col);
+  font-family: var(--en-p-font);
+  font-size: 1rem;
+  color: var(--white1-col);
+}
+/* intro 끝 */

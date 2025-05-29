@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="감정을 설계하고 상상을 시각화하는 UX 디자이너 박아인의 네온 유니버스 포트폴리오. 프로젝트마다 하나의 행성처럼, 독창적인 인터랙션과 실험적인 UI로 구성된 우주 속 여정을 지금 만나보세요.">
+  <meta name="keywords"
+    content="UX 디자이너, 박아인, 감성 UX, 네온 유니버스, 인터랙션 포트폴리오, 웹디자인, UX 실험, 프로젝트 기반 포트폴리오, 프로토타입, Neon Universe, 웹 인터페이스, 사용자 경험, UX/UI 디자이너 포트폴리오" />
+  <meta name="author" content="Bak Ahin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ain Universe</title>
+  <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/portal.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.1.0/fontfaceobserver.standalone.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@interactjs/interactjs/dist/interact.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/MotionPathPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+
+  <script src="js/intro.js" type="module" defer></script>
+  <script src="js/main.js"></script>
+  <script src="js/mission.js"></script>
+  <script src="js/my_planets.js"></script>
+  <script src="js/my_planetsM.js"></script>
+  <script src="js/portal.js"></script>
+
+</head>
+
+<body>
+  <div class="custom_cursor"></div>
+  <figure class="vid">
+    <video src="video/bg_video.mp4" autoplay muted loop poster="img/bg.png"></video>
+  </figure><!-- //.vid -->
+  <div class="wrap">
+    <div class="gnb">
+      <ul>
+        <li class="g_icon0" data-tooltip="intro"><a href="#hero">
+            <img src="img/intro2.png" alt="hero">
+          </a></li>
+        <li class="g_icon1" data-tooltip="mission log"><a href="#mission_log"><img src="img/Misson_Log.png"
+              alt="mission log" /></a>
+        </li>
+        <li class="g_icon2" data-tooltip="my planets"><a href="#my_planets"><img src="img/my_planets.png"
+              alt="my planets" /></a>
+        </li>
+        <li class="g_icon3" data-tooltip="hidden portals"><a href="#hidden_portals"><img src="img/portals.png"
+              alt="hidden portals" /></a>
+        </li>
+        <li class="g_icon4" data-tooltip="send signal"><a href="#send_signal"><img src="img/signal.png"
+              alt="send signal" /></a></li>
+      </ul>
+    </div><!-- //.gnb -->
+    <section class="section1 hero fix_intro" id="hero">
+      <h2 class="tit">
+        <img class="ain" src="img/ain.png" alt="ain">
+        <img class="uni" src="img/uni.png" alt="uni">
+      </h2>
+      <div class="down">
+        <img src="img/down1.svg" alt="down" class="down1">
+        <img src="img/down2.svg" alt="down" class="down2">
+        <span>Expand More</span>
+      </div>
+      <div class="con">
+        <div class="planet_center">
+        </div>
+      </div>
+    </section><!-- //.section1 -->
+    <section id="mission_log" class="section2 horizontal">
+      <div class="horizontal_wrap">
+        <article class="hud_card1">
+          <h2>Explorer Profile</h2>
+          <div class="inner">
+            <div class="top">
+              <ul>
+                <li class="profile1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="160" height="22" viewBox="0 0 160 22" fill="none"
+                    class="svg1">
+                    <g filter="url(#filter0_d_1333_3365)">
+                      <path
+                        d="M2.73905 3.20516L3.20516 7.26095L7.26095 6.79484L6.79484 2.73905L2.73905 3.20516ZM20.1163 17L19.8054 17.3916L20.1163 17.5V17ZM155 17.5H155.5V16.5H155V17.5ZM4.68912 5.39161L19.8054 17.3916L20.4272 16.6084L5.31088 4.60839L4.68912 5.39161ZM20.1163 17.5H155V16.5H20.1163V17.5Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_1333_3365" x="0.739059" y="0.739014" width="158.761" height="20.761"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="1" dy="1" />
+                        <feGaussianBlur stdDeviation="1.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1333_3365" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1333_3365" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="120" height="16" viewBox="0 0 120 16" fill="none"
+                    class="svg2">
+                    <g filter="url(#filter0_d_2419_20)">
+                      <path
+                        d="M2.11366 1.98784L2.46187 5.01778L5.49181 4.66957L5.1436 1.63963L2.11366 1.98784ZM15.0956 12.2935L14.8633 12.586L15.0956 12.667V12.2935ZM115.863 12.667H116.236V11.92H115.863V12.667ZM3.80273 3.3287L3.57049 3.62126L14.8633 12.586L15.0956 12.2935L15.3278 12.0009L4.03498 3.03615L3.80273 3.3287ZM15.0956 12.2935V12.667H115.863V12.2935V11.92H15.0956V12.2935Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_2419_20" x="0.619151" y="0.145503" width="118.605" height="15.5098"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="0.747065" dy="0.747065" />
+                        <feGaussianBlur stdDeviation="1.1206" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2419_20" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2419_20" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <b>CODE NAME: </b><span>박아인</span>
+                </li>
+                <li class="profile2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="190" height="23" viewBox="0 0 190 23" fill="none"
+                    class="svg1">
+                    <g filter="url(#filter0_d_1333_3369)">
+                      <path
+                        d="M2.71906 3.23063L3.23063 7.28094L7.28094 6.76937L6.76937 2.71906L2.71906 3.23063ZM21.7586 18L21.4522 18.3951L21.7586 18.5V18ZM185 18.5H185.5V17.5H185V18.5ZM4.69354 5.39507L21.4522 18.3951L22.0651 17.6049L5.30646 4.60493L4.69354 5.39507ZM21.7586 18.5H185V17.5H21.7586V18.5Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_1333_3369" x="0.71907" y="0.719116" width="188.781" height="21.7809"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="1" dy="1" />
+                        <feGaussianBlur stdDeviation="1.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1333_3369" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1333_3369" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="142" height="17" viewBox="0 0 142 17" fill="none"
+                    class="svg2">
+                    <g filter="url(#filter0_d_2419_24)">
+                      <path
+                        d="M2.09873 2.2246L2.4809 5.25044L5.50674 4.86827L5.12457 1.84242L2.09873 2.2246ZM16.3225 13.2583L16.0936 13.5534L16.3225 13.6318V13.2583ZM138.274 13.6318H138.648V12.8847H138.274V13.6318ZM3.80273 3.54643L3.57379 3.84158L16.0936 13.5534L16.3225 13.2583L16.5515 12.9631L4.03168 3.25129L3.80273 3.54643ZM16.3225 13.2583V13.6318H138.274V13.2583V12.8847H16.3225V13.2583Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_2419_24" x="0.604502" y="0.348292" width="141.032" height="16.2718"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="0.747065" dy="0.747065" />
+                        <feGaussianBlur stdDeviation="1.1206" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2419_24" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2419_24" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <b>AFFILIATION: </b><span>UIUX DESIGNER</span>
+                </li>
+                <li class="profile3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="118" height="22" viewBox="0 0 118 22" fill="none"
+                    class="svg1">
+                    <g filter="url(#filter0_d_1333_3373)">
+                      <path
+                        d="M2.8089 3.12053L3.12053 7.1911L7.1911 6.87947L6.87947 2.8089L2.8089 3.12053ZM18.9896 17L18.6641 17.3795L18.9896 17.5V17ZM113 17.5H113.5V16.5H113V17.5ZM4.67447 5.37951L18.6641 17.3795L19.3152 16.6205L5.32553 4.62049L4.67447 5.37951ZM18.9896 17.5H113V16.5H18.9896V17.5Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_1333_3373" x="0.808899" y="0.80896" width="116.691" height="20.691"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="1" dy="1" />
+                        <feGaussianBlur stdDeviation="1.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1333_3373" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1333_3373" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="88" height="16" viewBox="0 0 88 16" fill="none"
+                    class="svg2">
+                    <g filter="url(#filter0_d_2419_28)">
+                      <path
+                        d="M2.16584 1.85419L2.39864 4.89517L5.43963 4.66237L5.20682 1.62139L2.16584 1.85419ZM14.2539 12.2231L14.0107 12.5066L14.2539 12.5966V12.2231ZM84.4858 12.5966H84.8593V11.8495H84.4858V12.5966ZM3.80273 3.25828L3.55954 3.5418L14.0107 12.5066L14.2539 12.2231L14.4971 11.9395L4.04593 2.97476L3.80273 3.25828ZM14.2539 12.2231V12.5966H84.4858V12.2231V11.8495H14.2539V12.2231Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_2419_28" x="0.671885" y="0.127253" width="87.1758" height="15.4576"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="0.747065" dy="0.747065" />
+                        <feGaussianBlur stdDeviation="1.1206" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2419_28" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2419_28" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <b>SECTOR: </b><span>UIUX DESIGN</span>
+                </li>
+                <li class="profile4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="174" height="22" viewBox="0 0 174 22" fill="none"
+                    class="svg1">
+                    <g filter="url(#filter0_d_1333_3377)">
+                      <path
+                        d="M2.73831 3.20609L3.20609 7.26169L7.26169 6.79391L6.79391 2.73831L2.73831 3.20609ZM20.1292 17L19.8184 17.3917L20.1292 17.5V17ZM169 17.5H169.5V16.5H169V17.5ZM4.68929 5.39174L19.8184 17.3917L20.4399 16.6083L5.31071 4.60826L4.68929 5.39174ZM20.1292 17.5H169V16.5H20.1292V17.5Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_1333_3377" x="0.738312" y="0.738281" width="172.762" height="20.7617"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="1" dy="1" />
+                        <feGaussianBlur stdDeviation="1.5" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1333_3377" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1333_3377" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="130" height="16" viewBox="0 0 130 16" fill="none"
+                    class="svg2">
+                    <g filter="url(#filter0_d_2419_32)">
+                      <path
+                        d="M2.11311 1.88289L2.46257 4.91268L5.49236 4.56322L5.1429 1.53342L2.11311 1.88289ZM15.1052 12.1878L14.8731 12.4805L15.1052 12.5614V12.1878ZM126.321 12.5614H126.695V11.8143H126.321V12.5614ZM3.80273 3.22305L3.57061 3.51571L14.8731 12.4805L15.1052 12.1878L15.3373 11.8952L4.03486 2.9304L3.80273 3.22305ZM15.1052 12.1878V12.5614H126.321V12.1878V11.8143H15.1052V12.1878Z"
+                        fill="#FCBCFF" />
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_2419_32" x="0.619151" y="0.0392941" width="129.064" height="15.5103"
+                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                          result="hardAlpha" />
+                        <feOffset dx="0.747065" dy="0.747065" />
+                        <feGaussianBlur stdDeviation="1.1206" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix"
+                          values="0 0 0 0 0.992157 0 0 0 0 0.0823529 0 0 0 0 0.901176 0 0 0 0.69 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2419_32" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2419_32" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                  <b>SPECIALITY: </b>
+                  <span><em>유쾌한 경험 설계</em><em>공감력 있는 디자인</em>트렌디한 감각<em>집요한 몰입력</em>
+                    <em>자기성찰</em></span>
+                </li>
+              </ul>
+              <div class="selfie">
+                <img src="img/selfie.png" alt="selfie" class="glitch-img">
+              </div>
+            </div>
+          </div><!-- //.inner -->
+        </article>
+        <article class="hud_card2">
+          <h2>Skills & Tools</h2>
+          <div class="inner">
+            <div class="s_icon s_icon1 low">
+              <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" width="70" height="61" viewBox="0 0 73 64"
+                fill="none">
+                <path class="animated-line"
+                  d="M19.9772 4.96802L4.62177 32.0433L19.9772 59.1186H53.283L68.6383 32.0434L53.2829 4.96814L19.9772 4.96802Z"
+                  stroke="#EA15FD" stroke-width="2" fill="none" stroke-dasharray="220" stroke-dashoffset="220"
+                  stroke-linecap="round" />
+              </svg>
+              <img src="img/React.svg" alt="React" />
+            </div>
+            <div class="s_icon s_icon2 mid">
+              <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" width="70" height="61" viewBox="0 0 73 64"
+                fill="none">
+                <path class="animated-line"
+                  d="M19.9772 4.96802L4.62177 32.0433L19.9772 59.1186H53.283L68.6383 32.0434L53.2829 4.96814L19.9772 4.96802Z"
+                  stroke="#EA15FD" stroke-width="2" fill="none" stroke-dasharray="220" stroke-dashoffset="220"
+                  stroke-linecap="round" />
+              </svg>
+              <img src="img/Photoshop.svg" alt="Photoshop" />
+            </div>
+            <div class="s_icon s_icon3 mid">
+              <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" width="70" height="61" viewBox="0 0 73 64"
+                fill="none">
+                <path class="animated-line"
+                  d="M19.9772 4.96802L4.62177 32.0433L19.9772 59.1186H53.283L68.6383 32.0434L53.2829 4.96814L19.9772 4.96802Z"
+                  stroke="#EA15FD" stroke-width="2" fill="none" stroke-dasharray="220" stroke-dashoffset="220"
+                  stroke-linecap="round" />
+              </svg>
+              <img src="img/Illustrator.svg" alt="Illustrator" />
+            </div>
+            <div class="s_icon s_icon4 high">
+              <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" width="70" height="61" viewBox="0 0 73 64"
+                fill="none">
+                <path class="animated-line"
+                  d="M19.9772 4.96802L4.62177 32.0433L19.9772 59.1186H53.283L68.6383 32.0434L53.2829 4.96814L19.9772 4.96802Z"
+                  stroke="#EA15FD" stroke-width="2" fill="none" stroke-dasharray="220" stroke-dashoffset="220"
+                  stroke-linecap="round" />
+              </svg>
+              <img src="img/Figma.svg" alt="Figma" />
+            </div>
+            <div class="s_icon s_icon5 mid">
+              <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" width="70" height="61" viewBox="0 0 73 64"
+                fill="none">
+                <path class="animated-line"
+                  d="M19.9772 4.96802L4.62177 32.0433L19.9772 59.1186H53.283L68.6383 32.0434L53.2829 4.96814L19.9772 4.96802Z"
+                  stroke="#EA15FD" stroke-width="2" fill="none" stroke-dasharray="220" stroke-dashoffset="220"
+                  stroke-linecap="round" />
+              </svg>
+              <img src="img/Html5.svg" alt="HTML5" />
+            </div>
+            <div class="s_icon s_icon6 mid">
+              <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" width="70" height="61" viewBox="0 0 73 64"
+                fill="none">
+                <path class="animated-line"
+                  d="M19.9772 4.96802L4.62177 32.0433L19.9772 59.1186H53.283L68.6383 32.0434L53.2829 4.96814L19.9772 4.96802Z"
+                  stroke="#EA15FD" stroke-width="2" fill="none" stroke-dasharray="220" stroke-dashoffset="220"
+                  stroke-linecap="round" />
+              </svg>
+              <img src="img/Html3.svg" alt="CSS" />
+            </div>
+            <div class="s_icon s_icon7 low">
+              <svg class="animated-svg" xmlns="http://www.w3.org/2000/svg" width="70" height="61" viewBox="0 0 73 64"
+                fill="none">
+                <path class="animated-line"
+                  d="M19.9772 4.96802L4.62177 32.0433L19.9772 59.1186H53.283L68.6383 32.0434L53.2829 4.96814L19.9772 4.96802Z"
+                  stroke="#EA15FD" stroke-width="2" fill="none" stroke-dasharray="220" stroke-dashoffset="220"
+                  stroke-linecap="round" />
+              </svg>
+              <img src="img/Javascript.svg" alt="JavaScript" />
+            </div>
+          </div>
+        </article>
+        <article class="hud_card3">
+          <h2>Journey & Experience</h2>
+          <div class="inner">
+            <ul>
+              <li class="edu">
+                <p>[EDU] 2010.03 - 2013.02 | 전주기전여자고등학교 | 졸업 </p>
+                <p>[EDU] 2013.03 - 2015.02 | 국제호텔직업전문학교 제과제빵과 | 졸업</p>
+                <p>[EDU] 2024.12 - 2025.06 |
+                  <br><span>강남 이젠 아카데미 UX/UI 디자인·프론트엔드 부트캠프 | 수료</span>
+                </p>
+              </li>
+              <li class="exp">
+                <p>[EXP] 2014 - 2024 | F&B 업계 베이커리 커리어
+                  <span>아티제, 현대그린푸드, 언더프레셔, 플링크 등 </span><span>사원부터 메뉴개발팀장까지 다양한 현장
+                    경험과 리더십 축적</span>
+                </p>
+              </li>
+              <li class="lic">
+                <p>[LIC] 2014.06 | 미국 바리스타 자격 | AHLA</p>
+                <p>[LIC] 2021.04 | 제과기능사 | 한국산업인력공단</p>
+                <p>[LIC] 2025.04 | 웹디자인기능사 | 한국산업인력공단</p>
+              </li>
+              <li class="awd">
+                <p>[AWD] 2014 | 대한민국 국제요리경연대회 금상 | 한국농수산식품유통공사</p>
+              </li>
+            </ul>
+          </div><!-- //.inner -->
+        </article>
+        <article class="hud_card4">
+          <h2>Contact</h2>
+          <div class="inner">
+            <ul>
+              <li><a href="https://open.kakao.com/o/sWR0Yish" target="_blank">
+                  <img src="img/Kakao-Talk.svg" alt="KakaoTalk">
+                  <em>ain_n</em>
+                </a></li>
+              <li><a href="mailto:cpfl8452@naver.com">
+                  <img src="img/Email.svg" alt="Email">
+                  <em>cpfl8452@naver.com</em>
+                </a></li>
+              <li><a href="https://www.instagram.com/ahhh_ing?igsh=bjd3YXVjcGhibWtt&utm_source=qr" target="_blank">
+                  <img src="img/Instagram.svg" alt="Instagram">
+                  <em>@ahhh_ing</em>
+                </a></li>
+            </ul>
+          </div><!-- //.inner -->
+        </article>
+        <div class="swiper-pagination my_pg2"></div>
+      </div>
+    </section><!-- //.section2 -->
+    <section id="my_planets_wrap" class="section3">
+      <section class="intro">
+        <div class="spaceship">
+          <img src="img/spaceship.png" alt="spaceship">
+        </div>
+        <div class="typing_wrapper">
+          <h2 class="typing_text typing_text1"></h2>
+          <p class="typing_text2">
+            <span class="em_typing"><em></em></span>
+            <span class="rest_text">
+              는 단순한 포트폴리오가 아닌, 내가 만들어가는 감각의 우주입니다.<br>
+              우주는 완벽하게 계산된 듯 보이지만, 그 안엔 늘 예측할 수 없는 움직임이 숨어 있죠.<br>
+              제 디자인도 마찬가지예요, 정돈된 구조 속에 뜻밖의 인터랙션과 감각적인 포인트를 숨겨두었습니다.<br>
+              사용자가 ‘오?’ 하고 멈춰 서는 그 찰나의 경험이, 새로운 시각과 또 다른 우주로 이어지길 바랍니다.
+            </span>
+          </p>
+        </div>
+        <div class="scroll_hint" style="display: none;">↓NEXT</div>
+      </section><!-- //.intro -->
+      <section id="my_planets" class="projects">
+        <div class="orbit_wrap">
+          <svg class="orbit_svg" xmlns="http://www.w3.org/2000/svg" width="1757" height="551" viewBox="0 0 1757 551"
+            fill="none">
+            <!-- 각각에 orbit_path 클래스 추가 (애니메이션용) -->
+            <path id="orbitPath1" class="orbit_path orbit1"
+              d="M1119.48 192.943C1120.01 201.903 1113.94 210.921 1102.26 219.56C1090.61 228.186 1073.47 236.362 1052.08 243.645C1009.31 258.21 949.662 269.177 883.279 273.084C816.896 276.99 756.375 273.096 712.193 263.649C690.098 258.925 672.113 252.817 659.527 245.617C646.924 238.407 639.835 230.163 639.308 221.203C638.781 212.243 644.853 203.225 656.524 194.586C668.178 185.959 685.323 177.784 706.71 170.501C749.479 155.936 809.126 144.969 875.509 141.062C941.892 137.155 1002.41 141.05 1046.6 150.497C1068.69 155.221 1086.67 161.329 1099.26 168.529C1111.86 175.739 1118.95 183.982 1119.48 192.943Z"
+              stroke="url(#paint0_linear_1799_3)" stroke-width="0.8" />
+            <path id="orbitPath2" class="orbit_path orbit2"
+              d="M1423.89 189.956C1425.51 209.908 1411.96 230.239 1385.81 249.928C1359.68 269.603 1321.08 288.557 1272.83 305.764C1176.35 340.174 1041.4 367.561 890.865 379.758C740.328 391.956 602.733 386.651 501.968 368.223C451.582 359.008 410.428 346.516 381.473 331.304C352.498 316.082 335.849 298.198 334.233 278.246C332.616 258.295 346.168 237.964 372.315 218.275C398.444 198.6 437.049 179.645 485.294 162.439C581.778 128.028 716.725 100.641 867.261 88.4442C1017.8 76.247 1155.39 81.5513 1256.16 99.9798C1306.54 109.195 1347.7 121.687 1376.65 136.898C1405.63 152.121 1422.28 170.005 1423.89 189.956Z"
+              stroke="url(#paint1_linear_1799_3)" stroke-width="0.8" />
+            <path id="orbitPath3" class="orbit_path orbit3"
+              d="M1745.3 233.185C1746.85 265.164 1724.22 296.898 1681.72 326.9C1639.24 356.889 1577 385.073 1499.57 409.967C1344.73 459.754 1129.23 496.354 889.78 507.958C650.334 519.561 432.306 503.97 273.372 469.39C193.902 452.099 129.229 430.066 84.0446 404.325C38.8402 378.573 13.2487 349.176 11.699 317.197C10.1492 285.218 32.7783 253.484 75.2808 223.482C117.765 193.493 180.003 165.309 257.429 140.415C412.275 90.6288 627.774 54.0286 867.22 42.4248C1106.67 30.821 1324.69 46.4122 1483.63 80.9925C1563.1 98.2832 1627.77 120.317 1672.96 146.057C1718.16 171.809 1743.75 201.206 1745.3 233.185Z"
+              stroke="url(#paint2_linear_1799_3)" stroke-width="0.8" />
+            <!-- defs 그대로 유지 -->
+            <defs>
+              <linearGradient id="paint0_linear_1799_3" x1="803.553" y1="143.832" x2="954.521" y2="299.451"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3854AF" />
+                <stop offset="0.480769" stop-color="#7BA9CE" />
+                <stop offset="1" stop-color="#0017AF" />
+              </linearGradient>
+              <linearGradient id="paint1_linear_1799_3" x1="390.729" y1="207.332" x2="788.933" y2="707.093"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5C2780" />
+                <stop offset="0.490385" stop-color="#96BFCE" />
+                <stop offset="1" stop-color="#FFBAFD" />
+              </linearGradient>
+              <linearGradient id="paint2_linear_1799_3" x1="630.5" y1="50.8318" x2="1211.76" y2="564.796"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#D0777F" />
+                <stop offset="0.504808" stop-color="#FCF6C8" />
+                <stop offset="1" stop-color="#FFA8B0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <article class="planets cherrisy">
+            <a href="./cherrisy/index.html" target="_blank">
+              <img src="img/cherrisy.png" alt="cherrisy">
+              <div class="info">
+                <img src="img/cherrisy 1.png" alt="cherrisy">
+                <div class="tit">
+                  <h2>CHERRISY</h2>
+                  <p>Pastry Branding Site</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="planets irun">
+            <a href="https://www.figma.com/proto/0aXdQ8wv57c0dPGNwa8i40/%EB%B0%95%EC%95%84%EC%9D%B8?page-id=2074%3A1831&node-id=2074-1838&viewport=680%2C70%2C0.05&t=ZMi41RDgLYpeNHC0-1&scaling=min-zoom&content-scaling=fixed"
+              target="_blank">
+              <img src="img/irun.png" alt="irun">
+              <div class="info">
+                <img src="img/irun 1.png" alt="irun">
+                <div class="tit">
+                  <h2>I-RUN</h2>
+                  <p>Maternal App Creation</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="planets nivea">
+            <a href="./nivea/index.html" target="_blank">
+              <img src="img/nivea.png" alt="nivea">
+              <div class="info">
+                <img src="img/NIVEA 1.png" alt="NIVEA">
+                <div class="tit">
+                  <h2>NIVEA</h2>
+                  <p>Website Redesign</p>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div><!-- //.orbit_wrap -->
+      </section><!-- //.projects -->
+    </section><!-- //.section3 -->
+    <section id="my_planetsM" class="section3_m">
+      <section class="intro">
+        <div class="spaceship">
+          <img src="img/spaceship.png" alt="spaceship">
+        </div>
+        <div class="typing_wrapper">
+          <h2 class="typing_text typing_text1"></h2>
+          <p class="typing_text2">
+            <span class="em_typing"><em></em></span>
+            <span class="rest_text">
+              는 단순한 포트폴리오가 아닌, 내가 만들어가는 감각의 우주입니다.<br>
+              <em>우주는 완벽하게 계산된 듯 보이지만, 그 안엔 늘 예측할 수 없는 움직임이 숨어 있죠.<br>
+                제 디자인도 마찬가지예요, 정돈된 구조 속에 뜻밖의 인터랙션과 감각적인 포인트를 숨겨두었습니다.<br>
+                사용자가 ‘오?’ 하고 멈춰 서는 그 찰나의 경험이, 새로운 시각과 또 다른 우주로 이어지길 바랍니다.</em>
+            </span>
+          </p>
+        </div>
+      </section><!-- //.intro -->
+      <section id="my_projects" class="projects swiper">
+        <div class="swiper-wrapper projects_wrapper">
+          <article class="planets cherrisy swiper-slide">
+            <a href="./cherrisy/index.html" target="_blank">
+              <img src="img/cherrisy.png" alt="cherrisy">
+              <div class="info">
+                <img src="img/cherrisy 1.png" alt="cherrisy">
+                <div class="tit">
+                  <h2>CHERRISY</h2>
+                  <p>Pastry Branding Site</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="planets irun swiper-slide">
+            <a href="https://www.figma.com/proto/0aXdQ8wv57c0dPGNwa8i40/%EB%B0%95%EC%95%84%EC%9D%B8?page-id=2074%3A1831&node-id=2074-1838&viewport=680%2C70%2C0.05&t=ZMi41RDgLYpeNHC0-1&scaling=min-zoom&content-scaling=fixed"
+              target="_blank">
+              <img src="img/irun.png" alt="irun">
+              <div class="info">
+                <img src="img/irun 1.png" alt="irun">
+                <div class="tit">
+                  <h2>I-RUN</h2>
+                  <p>Maternal App Creation</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="planets nivea swiper-slide">
+            <a href="./nivea/index.html" target="_blank">
+              <img src="img/nivea.png" alt="nivea">
+              <div class="info">
+                <img src="img/NIVEA 1.png" alt="NIVEA">
+                <div class="tit">
+                  <h2>NIVEA</h2>
+                  <p>Website Redesign</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="planets cherrisy swiper-slide">
+            <a href="./cherrisy/index.html" target="_blank">
+              <img src="img/cherrisy.png" alt="cherrisy">
+              <div class="info">
+                <img src="img/cherrisy 1.png" alt="cherrisy">
+                <div class="tit">
+                  <h2>CHERRISY</h2>
+                  <p>Pastry Branding Site</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="planets irun swiper-slide">
+            <a href="https://www.figma.com/proto/0aXdQ8wv57c0dPGNwa8i40/%EB%B0%95%EC%95%84%EC%9D%B8?page-id=2074%3A1831&node-id=2074-1838&viewport=680%2C70%2C0.05&t=ZMi41RDgLYpeNHC0-1&scaling=min-zoom&content-scaling=fixed"
+              target="_blank">
+              <img src="img/irun.png" alt="irun">
+              <div class="info">
+                <img src="img/irun 1.png" alt="irun">
+                <div class="tit">
+                  <h2>I-RUN</h2>
+                  <p>Maternal App Creation</p>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="planets nivea swiper-slide">
+            <a href="./nivea/index.html" target="_blank">
+              <img src="img/nivea.png" alt="nivea">
+              <div class="info">
+                <img src="img/NIVEA 1.png" alt="NIVEA">
+                <div class="tit">
+                  <h2>NIVEA</h2>
+                  <p>Website Redesign</p>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div><!-- //.projects_wrapper -->
+        <div class="swiper-pagination my_pg"></div>
+      </section><!-- //.projects -->
+    </section><!-- //.section3 -->
+    <section id="hidden_portals" class="section4">
+      <div class="portal_wrapper">
+        <h2 class="portal_title  glitch is-glitching" data-text="HIDDEN PORTALS" tabindex="-1">HIDDEN PORTALS</h2>
+        <div class="portal_circle" id="portal">
+          <figure>
+            <video class="portal_video" src="video/potal_bg_vid.mp4" autoplay muted loop playsinline
+              poster="img/portals_bg.png"></video>
+          </figure>
+          <img class="circle" src="img/circle.svg" alt="">
+          <div class="portal_cards">
+            <div class="card pink card1" data-tooltip="Drag Me!">
+              <p> Emotional Baker</p>
+              <img src="img/keword_icon1.png" alt="icon1">
+            </div>
+            <div class="card purple card2" data-tooltip="Click Me!" data-href="company/index.html" data-target="_blank">
+              <p>Project: Hidden</p>
+              <img src="img/keword_icon2.png" alt="icon2">
+            </div>
+            <div class="card green card3" data-tooltip="Color Change!">
+              <p>#LOVE4FUN</p>
+            </div>
+            <div class="card blue card4" data-tooltip="Back to Start!">
+              <p>#RESET</p>
+            </div>
+            <div class="card green card5" data-tooltip="Drag Me!">
+              <p>From Kitchen to UX</p>
+              <img src="img/keword_icon5.png" alt="icon5">
+            </div>
+            <div class="card purple card6" data-tooltip="Drag Me!">
+              <p>자기반성형 리더</p>
+              <img src="img/keword_icon6.png" alt="icon6">
+            </div>
+            <div class="card blue card7" data-tooltip="Drag Me!">
+              <p>끈질긴 완성형</p>
+              <img src="img/keword_icon7.png" alt="icon7">
+            </div>
+            <div class="card purple card8" data-tooltip="Drag Me!">
+              <p>오타 탐지기</p>
+              <img src="img/keword_icon8.png" alt="icon8">
+            </div>
+            <div class="card blue card9" data-tooltip="Drag Me!">
+              <p>Warm but Bold</p>
+              <img src="img/keword_icon9.png" alt="icon9">
+            </div>
+            <div class="card pink card10" data-tooltip="Position Shuffle!">
+              <p>Gravity Shift</p>
+              <img src="img/keword_icon10.png" alt="icon10">
+            </div>
+            <div class="card green card11" data-tooltip="Drag Me!">
+              <p>Team Energizer</p>
+              <img src="img/keword_icon11.png" alt="icon11">
+            </div>
+            <div class="qr">
+              <img src="img/qr.png" alt="qrcode">
+            </div>
+          </div>
+          <div class="scroll_hint2">↓NEXT</div>
+        </div><!-- //.portal_circle -->
+      </div><!-- //.portal_wrapper -->
+    </section><!-- //.section4 -->
+    <section id="send_signal" class="section5">
+      <canvas id="mouseTrailCanvas"></canvas>
+      <div class="content">
+        <h2 data-content="Send a Signal">Send a Signal</h2>
+        <ul class="contacts">
+          <li class="contacts1 email"><a href="mailto:cpfl8452@naver.com"><img src="img/email2.svg"
+                alt="e-mail" /><span>e-mail</span></a></li>
+          <li class="contacts2 kakao"><a href="https://open.kakao.com/o/sWR0Yish" target="_blank"><img
+                src="img/kakao2.svg" alt="kakao" /><span>kakao</span></a></li>
+          <li class="contacts3 insta"><a href="https://www.instagram.com/ahhh_ing?igsh=bjd3YXVjcGhibWtt&utm_source=qr"
+              target="_blank"><img src="img/insta2.svg" alt="insta" /><span>insta</span></a></li>
+        </ul>
+        <div class="txtAniBox">
+          <ul class="txtAni">
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+            <li>Send a message across the universe</li>
+          </ul>
+        </div><!-- //.txtAniBox -->
+      </div><!-- //.contacts -->
+    </section><!-- //.section5 -->
+  </div><!-- //.wrap -->
+</body>
+
+</html>

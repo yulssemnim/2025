@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="지아의 포트폴리오 사이트 입니다">
+    <meta name="keywords" content="HTML, CSS, JavaScript, portfolio">
+    <meta name="author" content="Jia Lee">
+    <meta property="og:title" content="지아의 포트폴리오">
+    <meta property="og:image" content="https://leejia-design.github.io/portfolio/img/leejia_main.jpg">
+    <meta property="og:description" content="Description Here">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="manifest" href="/site.webmanifest">       
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media.css">
+    <script src="https://kit.fontawesome.com/3f894f62e6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <!-- Include Three.js via CDN -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FontLoader.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/geometries/TextGeometry.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/txtani.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js" defer></script>
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="wrap">
+        <header>
+            <div class="container">
+                <ul>
+                    <li><a href="#works">WORK</a></li>
+                    <li><a href="#">
+                            <div class="logo_Ani">
+                                <h1><img src="img/logo.svg" alt="로고"></h1>
+                                <h2>Lee.Jia</h2>
+                            </div><!-- logo_Ani -->
+                        </a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+            </div><!-- container -->
+        </header>
+        <main class="main_visual">
+            <svg width="861" height="240" viewBox="0 0 861 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_75_10)">
+                    <path d="M56.8771 2H10V237.236H56.8771V2Z" stroke="black" stroke-width="5" stroke-miterlimit="10"
+                        class="hover-path path-stroke" filldata="#A7FFD6"/>
+                    <path d="M149.934 49.0472V2H103.057V237.236H149.934V96.0945H196.811V49.0472H149.934Z" stroke="black"
+                        stroke-width="5" stroke-miterlimit="10" class="hover-path path-stroke" filldata="#B5A0FF"/>
+                    <path d="M243.689 96.0945H196.812V143.142H243.689V96.0945Z" stroke="black" stroke-width="5"
+                        stroke-miterlimit="10" class="hover-path path-stroke" filldata="#FFC297"/>
+                        <path d="M290.566 49.0472H243.688V96.0945H290.566V237.236H337.443V2H290.566V49.0472Z" stroke="black"
+                        stroke-width="5" stroke-miterlimit="10" class="hover-path path-stroke" filldata="#CEFF5C" />
+                        <path d="M430.5 143.142H383.623V190.189H430.5V143.142Z" fill="black" class="hover-path" filldata="#FF5C80"/>
+                    <path d="M477.377 190.189H430.5V237.236H477.377V190.189Z" fill="black" class="hover-path" filldata="#AA968D"/>
+                    <path d="M524.255 2H477.377V190.189H524.255V2Z" fill="black" class="hover-path" filldata="#4193FF"/>
+                    <path d="M617.312 2H570.435V237.236H617.312V2Z" fill="black" class="hover-path" filldata="#FF63EF"/>
+                    <path d="M710.369 49.0472H663.492V237.236H710.369V143.142V96.0945V49.0472Z" fill="black"
+                    class="hover-path" filldata="#FD8888"/>
+                    <path d="M804.123 2H710.369V49.0472H804.123V2Z" fill="black" class="hover-path" filldata="#A0DFFF"/>
+                    <path d="M804.123 96.0945H710.369V143.142H804.123V96.0945Z" fill="black" class="hover-path" filldata="#FFEE8E"/>
+                    <path d="M804.123 49.0472V96.0945V143.142V237.236H851V49.0472H804.123Z" fill="black"
+                        class="hover-path" filldata="#D0FFB2"/>
+
+                </g>
+                <defs>
+                    <clipPath id="clip0_75_10">
+                        <rect width="861" height="239.236" fill="white"  />
+                    </clipPath>
+                </defs>
+            </svg>
+            <p>Hello, I’m <span><a href="#">Jia!</a></span>I’m a <span><a href="#">Graphic Designer & Web
+                        Publisher.</a></span><br>
+                Welcome, Dive right into my creative space!
+            </p>
+        </main>
+        <section class="works" id="works">
+            <div class="container">
+                <div class="works_top">
+                    <div class="title">
+                        <img src="img/icon-folder-hover-adding-files.gif" alt="폴더">
+                        <h2 class="scramble" >FEATURED WORKS</h2>
+                    </div>
+                    <div class="see_more_btn">
+                        <a href="#all_works">See more works</a>
+                        <img src="img/icon_v.svg" alt="icon_v">
+                    </div>
+                </div><!-- works_top -->
+                <div class="works_bottom">
+                    <div class="work_img">
+                        <ul>
+                            <li class=""><a href="#"><img src="img/work_moamoa2.png" alt="moamoa"></a></li>
+                            <li><a href="#"><img src="img/works_hybs.png" alt="hybs"></a></li>
+                            <li><a href="#"><img src="img/work_songpa.png" alt="songpa"></a></li>
+                            <li><a href="#"><img src="img/work_florevida.png" alt="florevida"></a></li>
+                            <li><a href="#"><img src="img/work_naib.png" alt="naib"></a></li>
+
+                        </ul>
+                    </div><!-- work_img -->
+                    <div class="wlist">
+                        <ul>
+                            <li class=""><a href="https://www.figma.com/proto/uzKHumYvchkGSKs2jBgMwo/%EC%9D%B4%EC%A7%80%EC%95%84?page-id=291%3A901&node-id=294-915&node-type=frame&viewport=1314%2C552%2C0.08&t=9e9BvFbqAURrFvfq-1&scaling=min-zoom&content-scaling=fixed">
+                               <img src="img/m_work1.png" alt="1">
+                                    <div class="tit_box">
+                                        <h3 class="">MoaMoa</h3>
+                                        <div class="w_logo"></div><span>_ App</span>
+                                    </div><!-- tit_box -->
+                                    <img class="arrow_grey" src="img/icon-arrow_right_grey.svg" alt="arrow_right_grey1">
+                                    <img class="arrow_black" src="img/icon-arrow_right_black.svg"
+                                        alt="arrow_right_black1">
+                                </a></li>
+                            <li><a href="https://www.figma.com/proto/uzKHumYvchkGSKs2jBgMwo/%EC%9D%B4%EC%A7%80%EC%95%84?page-id=291%3A901&node-id=367-116&node-type=frame&viewport=1484%2C987%2C0.18&t=dFIYoIrCo6LSFcV9-1&scaling=min-zoom&content-scaling=fixed">
+                                <img src="img/m_work2.png" alt="2">
+                                    <div class="tit_box">
+                                        <h3>HYBS</h3>
+                                        <div class="w_logo"></div><span>_ Web</span>
+                                    </div><!-- tit_box -->
+                                    <img class="arrow_grey" src="img/icon-arrow_right_grey.svg" alt="arrow_right_grey2">
+                                    <img class="arrow_black" src="img/icon-arrow_right_black.svg"
+                                        alt="arrow_right_black2">
+                                </a></li>
+                            <li><a href="https://www.figma.com/proto/uzKHumYvchkGSKs2jBgMwo/%EC%9D%B4%EC%A7%80%EC%95%84?page-id=291%3A901&node-id=598-701&node-type=frame&viewport=1351%2C865%2C0.15&t=AOi67jVnRaQClXBg-1&scaling=min-zoom&content-scaling=fixed">
+                                <img src="img/m_work3.png" alt="3">
+                                    <div class="tit_box">
+                                        <h3>Songpagu Office</h3>
+                                        <div class="w_logo"></div><span>_ Web</span>
+                                    </div><!-- tit_box -->
+                                    <img class="arrow_grey" src="img/icon-arrow_right_grey.svg" alt="arrow_right_grey3">
+                                    <img class="arrow_black" src="img/icon-arrow_right_black.svg"
+                                        alt="arrow_right_black3">
+                                </a></li>
+                            <li><a href="https://www.figma.com/proto/uzKHumYvchkGSKs2jBgMwo/%EC%9D%B4%EC%A7%80%EC%95%84?page-id=291%3A901&node-id=742-488&node-type=frame&viewport=1351%2C865%2C0.15&t=AOi67jVnRaQClXBg-1&scaling=min-zoom&content-scaling=fixed">
+                                <img src="img/m_work4.png" alt="4">
+                                    <div class="tit_box">
+                                        <h3>Florevida</h3>
+                                        <div class="w_logo"></div><span>_ Web</span>
+                                    </div><!-- tit_box -->
+                                    <img class="arrow_grey" src="img/icon-arrow_right_grey.svg" alt="arrow_right_grey4">
+                                    <img class="arrow_black" src="img/icon-arrow_right_black.svg"
+                                        alt="arrow_right_black4">
+                                </a></li>
+                            <li><a href="https://www.figma.com/proto/uzKHumYvchkGSKs2jBgMwo/%EC%9D%B4%EC%A7%80%EC%95%84?node-id=908-251&t=0tfimX1JEWcH4Gk4-1&scaling=min-zoom&content-scaling=fixed&page-id=291%3A901">
+                                <img src="img/m_work5.png" alt="5">
+                                    <div class="tit_box">
+                                        <h3>NAI-B</h3>
+                                        <div class="w_logo"></div><span>_ SNS Contents</span>
+                                    </div><!-- tit_box -->
+                                    <img class="arrow_grey" src="img/icon-arrow_right_grey.svg" alt="arrow_right_grey5">
+                                    <img class="arrow_black" src="img/icon-arrow_right_black.svg"
+                                        alt="arrow_right_black5">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div><!-- works_bottom -->
+            </div><!-- container -->
+        </section>
+        <section class="about_me" id="about">
+            <div class="container">
+                <div class="title">
+                    <img src="img/icon-emoji-smile-hover-smile.gif" alt="스마일">
+                    <h2 class="scramble2">ABOUT ME</h2>
+                </div><!-- title -->
+                <div class="about_box on">
+                    <div class="page1 pages "data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"data-aos-duration="1000">
+                        <img src="img/profile_img.png" alt="프로필 이지아">
+                        <div class="name">
+                            이지아<span>_Lee.Jia</span>
+                        </div>
+                        <p>Graphic Designer</p>
+                    </div><!-- page1 -->
+                    <div class="page2 pages"data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic"data-aos-duration="1000" data-aos-delay="300" >
+                        <div class="p_container">
+                            <div class="education">
+                                <h3>Education</h3>
+                                <p>TAFE NSW (DCE) IN SYDNEY</p><br>
+                                <span>2018.03 ~ 2020.07 (two years)</span><br>
+                                <strong>전공 - 그래픽디자인 (Diploma)</strong>
+                            </div><!-- education -->
+                            <div class="licence">
+                                <h3>Licence</h3>
+                                <div class="l_box">
+                                    <div class="gtq">
+                                        <img src="img/licence.svg" alt="licence1">
+                                        <p>GTQ포토샵 1급</p>
+                                        <span>2020.09.09</span>
+                                    </div>
+                                    <div class="space"></div>
+                                    <div class="web">
+                                        <img src="img/licence.svg" alt="licence2">
+                                        <p>웹디자인기능사</p>
+                                        <span>2024.12.04</span>
+                                    </div>
+                                </div><!-- l_box -->
+                            </div><!-- licence -->
+                            <div class="software">
+                                <h3>Software</h3>
+                                <div class="skills">
+                                    <div class="s_top">
+                                        <img src="img/adobe-illustrator.svg" alt="일러스트레이터">
+                                        <img src="img/adobe-photoshop.svg" alt="포토샵">
+                                        <img src="img/adobe-premiere.svg" alt="프리미어프로">
+                                        <img src="img/adobe-after-effects.svg" alt="에프터이펙트">
+                                        <img src="img/adobe-XD.svg" alt="어도비XD">
+                                    </div><!-- s_top -->
+                                    <div class="s_bottom">
+                                        <img src="img/figma-logo.svg" alt="피그마">
+                                        <img src="img/visual-studio-code.svg" alt="비주얼스튜디오코드">
+                                        <img src="img/jquery.svg" alt="제이쿼리">
+                                        <img src="img/html.svg" alt="html">
+                                        <img src="img/css.svg" alt="css">
+                                    </div><!-- s_bottom -->
+                                </div>
+                            </div><!-- software -->
+                        </div><!-- p_container -->
+                    </div><!-- page2 -->
+                    <div class="page3 pages"data-aos="flip-right"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="600">
+                        <div class="p_container">
+                            <div class="work_experience">
+                                <div class="title_box">
+                                    <h3>Work Experience</h3>
+                                </div>
+                                <div class="w_bottom">
+                                    <div class="line">
+                                        <div class="circle1 circle"></div>
+                                        <div class="circle2 circle"></div>
+                                        <div class="circle3 circle"></div>
+                                    </div>
+                                    <div class="we_box">
+                                        <div class="jtb">
+                                            <h4>JTB Company<span>IN SYDNEY</span></h4><br>
+                                            <p>2019.07~2020.08(one year)</p><br>
+                                            <strong>팀명 : 마케팅<br>
+                                                담당 업무 : 디지털 콘텐츠/광고 홍보물 디자인</strong>
+                                        </div><!-- jtb -->
+                                        <div class="secondstep">
+                                            <h4>Secondstep<span>IN SUNGSU</span></h4><br>
+                                            <p>2020.09~2023.02(two years and six month)</p><br>
+                                            <strong>팀명 : 디자인<br>
+                                                담당 업무 : 포스터, 배너, 명함 등 인쇄물 디자인</strong>
+                                        </div><!-- jtb -->
+                                        <div class="bigstone">
+                                            <h4>BIGSTONE COMPANY<span>IN NONHYEON</span></h4><br>
+                                            <p>2023.06~2024.07(one year)</p><br>
+                                            <strong>팀명 : 콘텐츠<br>
+                                                담당 업무 : 로고/포스터/판넬/웹상세페이지/SNS<br>콘텐츠/유튜브썸네일 등 광고디자인</strong>
+                                        </div><!-- jtb -->
+                                    </div><!-- we_box -->
+                                </div><!-- w_bottom -->
+                            </div><!-- work_experience -->
+                        </div>
+                    </div><!-- page3 -->
+                </div><!-- about_box -->
+            </div><!-- container -->
+        </section>
+
+        <section class="qualifications">
+            <div class="qualifications_title marquee">
+                <div class="div">
+                    <span>QUALIFICATIONS</span>
+                    <span>QUALIFICATIONS</span>
+                    <span>QUALIFICATIONS</span>
+                    <span>QUALIFICATIONS</span>
+                    <span>QUALIFICATIONS</span>
+                </div>        
+            </div>    
+            <!-- Introduction Section with Illustration and Text -->
+            <div class="intro">
+                <div class="container">
+                    <div class="img_box">
+                    <img src="img/qualification_illust.png" alt="Illustration of laptop and cat"></div>
+                    <div class="text_box">
+                        <div class="q_text">
+                            <div class="q_title">
+                                <h4>Project Management</h4>
+                            </div><!-- q_title -->
+                            <p data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000" >체계적으로 계획하고 실행하여 프로젝트의 목표와 일정을 효율적으로 달성합니다.</p>
+                        </div><!-- q_text -->
+                        <div class="q_text">
+                            <div class="q_title">
+                                <h4>Collaboration</h4>
+                            </div><!-- q_title -->
+                            <p data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">다양한 팀과 원활하게 소통하고 아이디어를 공유하며 최상의 결과를 만듭니다.</p>
+                        </div><!-- q_text -->
+                        <div class="q_text">
+                            <div class="q_title">
+                                <h4>Attention to Detail</h4>
+                            </div><!-- q_title -->
+                            <p data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">작은 디테일까지 놓치지 않고 완성도를 높여 최상의 품질을 유지합니다.</p>
+                        </div><!-- q_text -->
+                        <div class="q_text">
+                            <div class="q_title">
+                                <h4>Brand Identity </h4>
+                            </div>
+                            <p data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">브랜드의 핵심 가치를 시각적으로 표현하여 일관된 이미지를 구축합니다.</p>
+                        </div><!-- q_text -->
+                        <div class="q_text">
+                            <div class="q_title">
+                                <h4>Creativity</h4>
+                            </div>
+                            <p data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">새롭고 독창적인 아이디어로 차별화된 디자인을 제안합니다.</p>
+                        </div><!-- q_text -->
+                        <div class="q_text">
+                            <div class="q_title">
+                                <h4>Visual Communication</h4>
+                            </div>
+                            <p data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-out-cubic"
+                            data-aos-duration="1000">이미지를 통해 메시지를 효과적으로 전달하고 사용자 경험을 향상합니다.</p>
+                        </div><!-- q_text -->
+                    </div><!-- text_box -->
+                </div><!-- container -->
+            </div><!-- intro -->
+        </section><!-- qualifications -->
+        <div class="black"></div>
+        <section class="all_works" id="all_works">
+                <div class="allworks_btn">
+                    <div class="a_btn">
+                        <h2><a href="#all_works">ALL WORKS</a></h2>
+                    </div><!-- a_btn -->
+            </div><!-- allworks_btn -->
+
+            <div class="container2">
+                <div class="portfolio">
+                    <div class="column1 column">
+                        <div class="p_box motionbox">
+                            <div class="p_category">Motion Graphic<span>01 Hisaish Joe Music Concert</span></div>
+                            <ul class="p_gallery motion">
+                                <li><a href="https://youtu.be/2cUVO2nZEfo"><img  src="img/motion1.png" alt="motion1"></a></li>
+                                <li><a href="#"><img class="f2" src="img/motion2.png" alt="motion2"></a></li>
+                                <li><a href="#"><img src="img/motion3.png" alt="motion3"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                        <div class="p_box freesambox">
+                            <div class="p_category">Web Pages<span>01 Freesam_Redesign</span></div>
+                            <ul class="p_gallery freesam">
+                                <li><a href="#"><img src="img/freesam1.png" alt="freesam1"></a></li>
+                                <li><a href="#"><img src="img/freesam2.png" alt="freesam2"></a></li>
+                                <li><a href="#"><img src="img/freesam3.png" alt="freesam3"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                    </div><!-- column1 -->
+                    <div class="column2 column">
+                        <div class="p_box routinebox">
+                            <div class="p_category">Web Pages<span>02 Routin Cleaner</span></div>
+                            <ul class="p_gallery  routin">
+                                <li><a href="#"><img src="img/routin1.png" alt="routin1"></a></li>
+                                <li><a href="#"><img src="img/routin2.png" alt="routin2"></a></li>
+                                <li><a href="#"><img src="img/routin3.png" alt="routin3"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                        <div class="p_box cellreturnbox">
+                            <div class="p_category">Web Pages<span>03 Cellreturn</span></div>
+                            <ul class="p_gallery cellreturn">
+                                <li><a href="#"><img src="img/cellreturn1.png" alt="cellreturn1"></a></li>
+                                <li><a href="#"><img src="img/cellreturn2.png" alt="cellreturn2"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                    </div><!-- column2 -->
+                    <div class="column3 column">
+                        <div class="p_box sovanobox">
+                            <div class="p_category">SNS Contents<span>01 Sovano</span></div>
+                            <ul class="p_gallery sovano">
+                                <li><a href="#"><img src="img/sovano1.png" alt="sovano1"></a></li>
+                                <li><a href="#"><img src="img/sovano2.png" alt="sovano2"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                        <div class="p_box goyangsibox">
+                            <div class="p_category ">SNS Contents<span>02 GIPA</span></div>
+                            <ul class="p_gallery goyangsi">
+                                <li><a href="#"><img src="img/goyoungsi1.png" alt="goyaingsi1"></a></li>
+                                <li><a href="#"><img src="img/goyoungsi2.png" alt="goyaingsi2"></a></li>
+                                <li><a href="#"><img src="img/goyoungsi3.png" alt="goyaingsi3"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                    </div><!-- column3 -->
+                    <div class="column4 column">
+                        <div class="p_box logobox">
+                            <div class="p_category">Logo<span>01 Butter Monkey</span><span>02 Whiran</span></div>
+                            <ul class="p_gallery logos">
+                                <li><a href="#"><img src="img/logo1.png" alt="monkeypub"></a></li>
+                                <li><a href="#"><img src="img/logo2.png" alt="whiran1"></a></li>
+                                <li><a href="#"><img src="img/logo3.png" alt="whiran2"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                        <div class="p_box printbox">
+                            <div class="p_category ">Print<span>01 Brochure</span><span>02 Magazine</span></div>
+                            <ul class="p_gallery print">
+                                <li><a href="#"><img src="img/print1.png" alt="print1"></a></li>
+                                <li><a href="#"><img src="img/print2.png" alt="print2"></a></li>
+                            </ul>
+                        </div><!-- p_box -->
+                    </div><!-- column3 -->
+                </div><!-- portfolio -->
+            </div><!-- container2 -->
+        </section><!-- all_works -->
+
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="contact">
+                <canvas id="webgl-canvas"></canvas>
+            </div>
+            <div class="container">
+                <strong>Site Designed by Lee Jia</strong>
+                <p>theccjr@gmail.com</p>
+                <span><a href="#">Prototype</a></span>
+            </div>
+        </footer>
+
+    </div><!-- wrap -->
+</body>
+
+</html>

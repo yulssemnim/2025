@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="김유나 포트폴리오">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Yuna">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio_34km</title>
+  <meta property="og:image" content="D:\2024_김유나\web\portfolio4\img\thumbnail.png" />
+  <meta property="og:title" content="Portfolio_34km" />
+  <meta property="og:description" content="유나의 포트폴리오를 소개합니다" />
+  <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cat_ani.css">
+  <link rel="stylesheet" href="./css/bgstar.css">
+  <link rel="stylesheet" href="./css/scroll_works.css">
+  <link rel="stylesheet" href="./css/common.css">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"
+    integrity="sha512-6+7rTBmR6pRFe9fa0vCFjFaHZj/XYa7774bEBzRtxgdpIJOS++R3cKd6Prg/eJmxtsJotd8KAg4g57uuVQsZKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cat_ani.js" defer></script>
+  <script src="js/scroll_works.js" defer></script>
+
+</head>
+
+<body class="fix">
+  <div class="wrap container">
+    <!-- 배경 별이미지 start-->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <!-- 배경 별이미지 end-->
+
+    <header>
+      <nav>
+        <h1><a href="./index.html"><img src="./img/logo_ai.png" alt="Portfolio_34km"></a></h1>
+        <ul class="main_gnb">
+          <li><a href="#con1">Main</a></li>
+          <li><a href="#con2">Works</a></li>
+          <li><a href="#con3">Etc Works</a></li>
+          <li><a href="#con4">Performance</a></li>
+          <li><a href="#con5">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- //intro_start -->
+    <!-- //intro_고양이모션 -->
+    <section class="cat_section" id="con1">
+      <div class="cat_aniall">
+        <div class="catani_wrapper">
+          <svg class="cat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 207.68 163.77" preserveAspectRatio="none">
+            <title>cat</title>
+            <g class="body">
+              <circle class="body_backcircle" cx="76.86" cy="83.31" r="45.5" />
+              <circle class="body_frontcircle" cx="150.86" cy="83.31" r="45.5" />
+              <rect class="body_between" x="74.65" y="37.89" width="83.04" height="90.61" />
+            </g>
+            <circle class="head" cx="161.76" cy="52.75" r="45.92" />
+            <g class="eyes">
+              <circle class="eyes_l" cx="152" cy="35" r="4" />
+              <circle class="eyes_r" cx="178" cy="35" r="4" />
+            </g>
+            <g class="ears">
+              <polygon class="ears_l" points="132.76 19 132.76 0 149.55 8.81 132.76 19" />
+              <polygon class="ears_r" points="179.44 11.2 197 4.06 195.16 22.9 179.44 11.2" />
+            </g>
+            <rect class="tail" x="-11" y="32.87" width="107" height="20" rx="9.58" ry="9.58"
+              transform="translate(41.19 -18.41) rotate(45)" />
+            <g class="backlegs">
+              <path class="backlegs1"
+                d="M74,124.85a6,6,0,0,0-4.7-7.07l-4.41-.89a6,6,0,0,0-7.07,4.7l-6.31,31.35a8.25,8.25,0,1,0,15.64,5,5.94,5.94,0,0,0,.44-1.33Z"
+                transform="translate(-1.58 -0.92)" />
+              <path class="backlegs2"
+                d="M88.22,125.86a6,6,0,0,0-4.38-7.27l-4.37-1.08a6,6,0,0,0-7.27,4.38l-7.69,31a8.25,8.25,0,1,0,15.41,5.72,5.94,5.94,0,0,0,.5-1.31Z"
+                transform="translate(-1.58 -0.92)" />
+            </g>
+            <g class="frontlegs">
+              <path class="frontlegs1"
+                d="M162.89,120.91a6,6,0,0,0-7.65-3.68L151,118.72a6,6,0,0,0-3.68,7.65l10.57,30.18a8.25,8.25,0,1,0,16-3.65,5.94,5.94,0,0,0-.3-1.37Z"
+                transform="translate(-1.58 -0.92)" />
+              <path class="frontlegs2"
+                d="M175.77,120.08a6,6,0,0,0-7.48-4l-4.31,1.3a6,6,0,0,0-4,7.48l9.22,30.62a8.25,8.25,0,1,0,16.17-2.94,5.94,5.94,0,0,0-.24-1.38Z"
+                transform="translate(-1.58 -0.92)" />
+            </g>
+          </svg>
+        </div>
+        <div class="layout notvisible"></div>
+        <div class="cat_bar"></div>
+      </div>
+      <div class="cat_title">
+        <h2 data-aos="zoom-in" data-aos-delay="1000">Are you ready to go on an<br> 
+          Adventure with me?</h2>
+      </div>
+
+    </section>
+  </div>
+  <!-- //intro_end-->
+
+
+  <!-- //Works_start-->
+  <div class="custom_cursor"></div>
+  <section class='works' id="con2">
+    <div class="circle"></div>
+    <div class="w_text">
+      <h4 class="text_line">사용자의 경험을 더 가치 있게 만들기 위해, 디테일에 집중한 저의 프로젝트 입니다.</h4>
+      <h2 class="text_line">Works</h2>
+    </div>
+
+    <article class="row_1">
+      <a href="https://www.figma.com/proto/CNrluTNsjQL35WmJ2ltqfs/%EA%B9%80%EC%9C%A0%EB%82%98?page-id=740%3A606&node-id=740-607&viewport=712%2C290%2C0.05&t=eZuNvUofDOEkavPt-1&scaling=min-zoom&content-scaling=fixed" class="clip" target="_blank">
+        <div class="title">
+          <h3 data-aos="zoom-in" data-aos-delay="50">01</h3>
+          <h4 data-aos="zoom-in" data-aos-delay="200">[APP] <b>Jeolroga</b></h4>
+        </div>
+        <img src='./img/works_item1.png' alt='앱 절로가'>
+      </a>
+    </article>
+
+    <article class="row_2">
+      <a href="https://www.figma.com/proto/CNrluTNsjQL35WmJ2ltqfs/%EA%B9%80%EC%9C%A0%EB%82%98?page-id=740%3A394&node-id=740-395&p=f&viewport=703%2C258%2C0.05&t=cIoPAXPlgCflHY5L-1&scaling=min-zoom&content-scaling=fixed" class="clip" target="_blank">
+        <div class="title">
+          <h3 data-aos="zoom-in" data-aos-delay="20">02</h3>
+          <h4 data-aos="zoom-in" data-aos-delay="200">[WEB] <b>JSOOP</b></h4>
+        </div>
+        <img src='./img/works_item2.png' alt='웹 제이숲'>
+      </a>
+    </article>
+
+    <article class="row_3">
+      <a href="https://www.figma.com/proto/CNrluTNsjQL35WmJ2ltqfs/%EA%B9%80%EC%9C%A0%EB%82%98?page-id=274%3A3&node-id=274-4&viewport=163%2C-221%2C0.34&t=15oOtxupUT9ZRTpT-1&scaling=min-zoom&content-scaling=fixed"
+        class="clip" target="_blank">
+        <div class="title">
+          <h3 data-aos="zoom-in" data-aos-delay="20">03</h3>
+          <h4 data-aos="zoom-in" data-aos-delay="200">[WEB] <b>Selfhouse</b></h4>
+        </div>
+        <img src='./img/works_item3.png' alt='웹 셀프하우스'>
+      </a>
+    </article>
+
+    <article class="row_4">
+      <a href="https://www.figma.com/proto/CNrluTNsjQL35WmJ2ltqfs/%EA%B9%80%EC%9C%A0%EB%82%98?page-id=479%3A2&node-id=740-2&viewport=650%2C273%2C0.05&t=HDl0oPeVgazgTagz-1&scaling=min-zoom&content-scaling=fixed"
+        class="clip" target="_blank">
+        <div class="title">
+          <h3 data-aos="zoom-in" data-aos-delay="20">04</h3>
+          <h4 data-aos="zoom-in" data-aos-delay="200">[WEB] <b>Let’s Korail</b></h4>
+        </div>
+        <img src='./img/works_item4.png' alt='웹 렛츠코레일'>
+      </a>
+    </article>
+
+    <article class="row_5">
+      <a href="https://www.figma.com/proto/CNrluTNsjQL35WmJ2ltqfs/%EA%B9%80%EC%9C%A0%EB%82%98?page-id=608%3A8&node-id=608-9&viewport=85%2C-648%2C0.32&t=qrj8JhCDCEMashU3-1&scaling=min-zoom&content-scaling=fixed" class="clip" target="_blank">
+        <div class="title">
+          <h3 data-aos="zoom-in" data-aos-delay="20">05</h3>
+          <h4 data-aos="zoom-in" data-aos-delay="200">[WEB] <b>CSON</b></h4>
+        </div>
+        <img src='./img/works_item5.png' alt='웹 코스온'>
+      </a>
+    </article>
+
+    <div class="bg_txt">
+      <p>I'm</p>
+      <p>Works</p>
+    </div>
+  </section>
+  <!-- //Works_end-->
+
+
+  <!-- //etc works_start -->
+  <div class="modal">
+    <div class="inner">
+      <img src="./img/eunwoo_on1.jpg" alt="상단 온 이미지">
+    </div>
+  </div>
+  <section class="etc_wrap" id="con3">
+    <div class="etc_title">
+      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">Rebranding·Detail page</h2>
+      <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">Promotion·Photo</h2>
+    </div>
+    <section class="slider_section">
+      <div class="wheel">
+
+        <div class="wheel_card">
+
+
+          <h4>사용자경험설계</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo1.jpg" alt="사용자경험설계">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>인터페이스디자인</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo2.jpg" alt="인터페이스디자인">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>프로토타이핑</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo3.jpg" alt="프로토타이핑">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>와이어프레임</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo4.jpg" alt="와이어프레임">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>사용자테스트</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo5.jpg" alt="사용자테스트">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>디자인시스템</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo1.jpg" alt="디자인시스템">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>접근성개선</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo2.jpg" alt="접근성개선">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>사용자분석</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo3.jpg" alt="사용자분석">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>인터랙션설계</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo4.jpg" alt="인터랙션설계">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>비주얼디자인</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo5.jpg" alt="비주얼디자인">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>사용자경험설계</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo1.jpg" alt="사용자경험설계">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>인터페이스디자인</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo2.jpg" alt="인터페이스디자인">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>프로토타이핑</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo3.jpg" alt="프로토타이핑">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>와이어프레임</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo4.jpg" alt="와이어프레임">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>사용자테스트</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo5.jpg" alt="사용자테스트">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>디자인시스템</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo1.jpg" alt="디자인시스템">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>접근성개선</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo2.jpg" alt="접근성개선">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>사용자분석</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo3.jpg" alt="사용자분석">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>인터랙션설계</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo4.jpg" alt="인터랙션설계">
+          </div>
+        </div>
+
+        <div class="wheel_card">
+          <h4>비주얼디자인</h4>
+          <div class="card_img">
+            <div class="plus">
+              <p>+</p>
+            </div>
+            <img src="./img/eunwoo5.jpg" alt="비주얼디자인">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+  <!-- //etc works_end-->
+
+
+  <!-- //Performance_start-->
+  <div class="bg_gra1"></div>
+  <section class="performance" id="con4">
+
+    <div class="sticky">
+      <div class="sticky_title">
+        <ul class='list'>
+          <li>
+            사용자의 경험을 한층 더 가치 있게 만들기 위해, 디테일에 집중한 저의 work를 소개합니다.
+          </li>
+          <li>
+            사용자의 경험을 한층 더 가치 있게 만들기 위해, 디테일에 집중한 저의 work를 소개합니다.
+          </li>
+        </ul>
+        <h2>PERFORMANCE</h2>
+      </div>
+      <div class="card_frame">
+        <div class="card">
+          <div class="front">
+            <h3>10th</h3>
+            <p>제가 세상을 향해 내딛은 움직임 하나하나는
+              그 자체로 배움이었고,
+              그 길 위에서 쌓아온 경험들은 나만의 멋진
+              여정으로 점점 더 선명해지고 있습니다.</p>
+          </div>
+          <div class="back">10th</div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <h3>3000</h3>
+            <p>제가 세상을 향해 내딛은 움직임 하나하나는
+              그 자체로 배움이었고,
+              그 길 위에서 쌓아온 경험들은 나만의 멋진
+              여정으로 점점 더 선명해지고 있습니다.</p>
+          </div>
+          <div class="back">3000</div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <h3>127%</h3>
+            <p>제가 세상을 향해 내딛은 움직임 하나하나는
+              그 자체로 배움이었고,
+              그 길 위에서 쌓아온 경험들은 나만의 멋진
+              여정으로 점점 더 선명해지고 있습니다.</p>
+          </div>
+          <div class="back">127%</div>
+        </div>
+        <div class="card">
+          <div class="front">
+            <h3>20</h3>
+            <p>제가 세상을 향해 내딛은 움직임 하나하나는
+              그 자체로 배움이었고,
+              그 길 위에서 쌓아온 경험들은 나만의 멋진
+              여정으로 점점 더 선명해지고 있습니다.</p>
+          </div>
+          <div class="back">20</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //Performance_end-->
+
+
+  <!-- Skills_start -->
+  <section class="skills" id="con5">
+    <div class="playground" id="skill_all">
+      <ul class="menu">
+        <li class="menu_item">
+          Problem-Solving Skill
+        </li>
+        <li class="menu_item">
+          Conflict Resolution
+        </li>
+        <li class="menu_item">
+          UX/UI Design
+        </li>
+        <li class="menu_item">
+          ReBranding
+        </li>
+        <li class="menu_item">
+          Marketing Design
+        </li>
+        <li class="menu_item">
+          Web Design
+        </li>
+        <li class="menu_item">
+          Project Manager
+        </li>
+        <li class="menu_item">
+          Collaboration Skill
+        </li>
+        <li class="menu_item">
+          Editorial Design
+        </li>
+        <li class="menu_item">
+          Team Leader
+        </li>
+        <li class="menu_item">
+          Mentoring
+        </li>
+      </ul>
+    </div>
+    <canvas id="helper"></canvas>
+    <h2>My Distinct <b>SKILL</b></h2>
+    <div class="pg_skill">
+      <span>[ Ai ]</span>
+      <span>[ Ps ]</span>
+      <span>[ Figma ]</span>
+      <span>[ Html ]</span>
+      <span>[ CSS ]</span>
+      <span>[ Js ]</span>
+      <span>[ Chat GPT ]</span>
+      <span>[ Adobe Firefly ]</span>
+      <span>[ Excel ]</span>
+      <span>[ powerpoint ]</span>
+      <span>[ word ]</span>
+      <span>[ Notion ]</span>
+    </div>
+  </section>
+  <div class="bg_gra2"></div>
+  <!-- Skills_end -->
+
+  <section class="closing_txt">
+    <ul class="scroll_text_all">
+      <li class="scroll_text">내가 내딛은 발걸음은 </li>
+      <li class="scroll_text">
+        <p>나만의 스킬</p>이 되었고,
+      </li>
+      <li class="scroll_text">내가 쌓아온 경험들은</li>
+      <li class="scroll_text">
+        <p>가치 있는 경험</p>을 주었습니다.
+      </li>
+      <li class="scroll_text">앞으로도 사용자가 맞이한</li>
+      <li class="scroll_text">
+        복잡한 길을 쉽게 탐색하도록 안내하는
+      </li>
+      <li class="scroll_text">
+        <p>디자이너</p>가 되겠습니다.
+      </li>
+    </ul>
+  </section>
+
+  <!-- thanks_start -->
+  <section class="thanks">
+    <div class="license">
+      <h4>My License</h4>
+      <p>웹디자인 기능사</p>
+      <p>컴퓨터 그래픽스 운용 기능사</p>
+      <p>미술교사</p>
+    </div>
+    <div class="thanks_tit">
+      <h2>Are you ready to go on an
+        adventure with me?</h2>
+    </div>
+    <div class="thanks_txt">
+      <p>Thank you for staying with me until the end</p>
+      <p>Thank you for staying with me until the end</p>
+      <p>Thank you for staying with me until the end</p>
+      <p>Thank you for staying with me until the end</p>
+    </div>
+  </section>
+  <!-- thanks_end -->
+
+  <div class="scroll_down"></div>
+
+</body>
+
+</html>
