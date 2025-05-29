@@ -1,0 +1,295 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url(font.css);
+
+:root {
+    --bg-color: #EDE9E6;
+    --point-color: #DBD5D0;
+    --dark-word: #333;
+    --gray-666: #666;
+    --bg-dark: #DBD5D0;
+    --white: #fff;
+    --gray-ccc: #ccc;
+    --pretendard: "Pretendard Variable", sans-serif;
+    --zen-dots: "Zen Dots", sans-serif;
+    --hyper-type: "HypeType", sans-serif;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    user-select: none;
+    cursor: none;
+}
+
+a {
+    cursor: none;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--dark-word);
+    font-family: var(--pretendard);
+}
+
+
+header {
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 98;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h1 a {
+    display: inline-block;
+    padding: 0.5em;
+    z-index: 99;
+    position: relative;
+    pointer-events: auto;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.cursor {
+    pointer-events: none;
+}
+
+.custom_cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: difference;
+    color: var(--white);
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.custom_cursor.hover {
+    transform: translate(-50%, -50%) scale(1.8);
+    background-color: var(--white);
+    mix-blend-mode: difference;
+}
+
+.custom_cursor.drag {
+    background-color: var(--dark-word);
+    mix-blend-mode: unset;
+    border-radius: 30px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+}
+
+.custom_cursor span {
+    white-space: nowrap;
+}
+
+.custom_cursor2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../img/main/star_cursor.svg) no-repeat center/contain;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.2s ease;
+    z-index: 9999;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 6px #fff9a0) drop-shadow(0 0 12px #fffab0);
+}
+
+.transition_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: 99;
+    pointer-events: none;
+  }
+  .ufobig {
+    position: fixed;
+    top: -100%;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .bg {
+    width: 100vw;
+    height: 60%;
+    background: center/cover no-repeat;
+    background-image: url(../img/main/about_bg.svg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#about .bg a {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#about .bg .ufo {
+    position: absolute;
+    z-index: 10;
+    filter: drop-shadow(-20px 0 25px rgba(255, 255, 255, 0.5));
+    top: 30%;
+    right: -40%;
+    transform: scale(0.7);
+    animation:
+    ufoFlyBackAndForth 5s ease-in-out infinite alternate,
+    ufoShake 0.8s ease-in-out infinite alternate;
+}
+
+/* 왕복 이동 애니메이션 */
+@keyframes ufoFlyBackAndForth {
+    0% {
+      right: -40%;
+    }
+    100% {
+      right: 100%;
+    }
+  }
+  
+  /* 흔들림 애니메이션 */
+  @keyframes ufoShake {
+    0% {
+      transform: scale(0.7) rotate(0deg) translateY(0);
+    }
+    100% {
+      transform: scale(0.7) rotate(5deg) translateY(10px);
+    }
+  }
+
+
+#about .bg .star {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    pointer-events: none;
+}
+
+.star-trail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+}
+
+#about .bg span::after {
+    content: '{ CLICK }';
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--white);
+    animation: blink 3s infinite ease-in-out;
+}
+
+#contact {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#contact ul {
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: 7%;
+    left: 3.2em;
+}
+
+#contact ul li {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+#contact ul li span {
+    width: 8rem;
+    font-weight: 900;
+}
+
+#contact .txt_area {
+    text-align: right;
+    font-size: 14vw;
+    line-height: 100%;
+    color: #ccc;
+    margin-right: 2%;
+}
+
+#contact .txt_area strong {
+    font-weight: 900;
+}
+
+#contact .txt_area .tit {
+    position: relative;
+    display: block;
+    color: rgba(0, 0, 0, 0.05);
+    width: 100%;
+    background: linear-gradient(to bottom, var(--dark-word), var(--dark-word)) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 0% 100%;
+    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+}

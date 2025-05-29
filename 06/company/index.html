@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(사)한국습지학회</title>
+    <!-- Locomotive Scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-simplyscroll/2.1.1/jquery.simplyscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js" defer></script> <!-- 레디펑션 안 넣어도 되게 속성추가 -->
+</head>
+
+<body>
+    <div class="wrap" data-scroll-container>
+        <header id="header">
+            <h1><a href="#"><span class="material-symbols-outlined">
+                        forest
+                    </span>한국습지학회</a></h1>
+            <nav class="">
+                <div class="nav_bg"></div>
+                <ul class="gnb">
+                    <li><a href="#">학회소개</a>
+                        <ul>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">정관</a></li>
+                            <li><a href="#">조직</a></li>
+                            <li><a href="#">구성</a></li>
+                            <li><a href="#">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">학술마당</a>
+                        <ul>
+                            <li><a href="#">뉴스레터</a></li>
+                            <li><a href="#">발표대회</a></li>
+                            <li><a href="#">지난대회</a></li>
+                            <li><a href="#">워크숍</a></li>
+                            <li><a href="#">갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">논문투고</a>
+                        <ul>
+                            <li><a href="#">투고안내</a></li>
+                            <li><a href="#">지침</a></li>
+                            <li><a href="#">심사흐름</a></li>
+                            <li><a href="#">제출</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">자료마당</a>
+                        <ul>
+                            <li><a href="#">습지정의</a></li>
+                            <li><a href="#">학회지</a></li>
+                            <li><a href="#">논문집</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">열린마당</a>
+                        <ul>
+                            <li><a href="#">공지</a></li>
+                            <li><a href="#">행사</a></li>
+                            <li><a href="#">채용</a></li>
+                            <li><a href="#">사이트</a></li>
+                        </ul>
+                    </li>
+
+            </nav>
+            <div class="r_menu">
+                <div class="sel">
+                    <p><a href="#">LOGIN</a></p>
+                </div><!-- sel -->
+            </div><!-- r_menu -->
+        </header>
+        <main>
+            <div class="custom_cursor"></div><!-- custom_cursor -->
+            <section class="main_visual">
+                <div class="main_slide_wrap swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide main1"><a href="#">
+                                <div class="tit">
+                                    <p>생물다양성의 보고, 습지</p>
+                                    <h2><span>습지는</span> 다양한 생물의 터전<span>이자,<br> 자연의</span> 생태 자산<span>입니다.</span></h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main2"><a href="#">
+                                <div class="tit">
+                                    <p>학제적 협력의 중심</p>
+                                    <h2><span>다양한 분야의 전문가들이<br> 함께</span> 연구<span>하고</span> 실천<span>합니다.</span></h2>
+                                </div>
+                            </a></li>
+                        <li class="swiper-slide main3"><a href="#">
+                                <div class="tit">
+                                    <p>한국습지학회</p>
+                                    <h2><span>습지를 지키고</span><br>지속가능한 방향<span>을 제시합니다.</span></h2>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div><!-- main_slide_wrap -->
+                <!-- 커스텀 페이지네이션 -->
+                <div class="vertical-pagination">
+                    <!-- 현재 슬라이드 번호 -->
+                    <div class="num">
+                        <span class="swiper-pagination-current">01</span> / 03
+                    </div><!-- num -->
+                    <!-- 중앙 세로라인(진행도 표시) -->
+                    <div class="swiper-pagination-line">
+                        <!-- 실제로 채워질 부분 -->
+                        <div class="swiper-pagination-line-fill"></div>
+                    </div>
+                    <!-- 위/아래 화살표(버튼) -->
+                    <div class="swiper-pagination-buttons">
+                        <span class="prev">▲</span>
+                        <span class="next">▼</span>
+                    </div>
+                </div> <!-- vertical-pagination -->
+            </section><!-- main_visual -->
+
+            <section class="txt_area">
+                <h2>
+                    <strong class="tit"><span>생태</span>와 <span>과학</span>이 만나는 지점에서,</strong>
+                    <b class="tit"><span>지속가능</span>한<span>미래</span>를 설계합니다.</b>
+                    <em class="tit">한국<span>습지학회</span></em>
+                </h2>
+            </section><!-- txt_area -->
+
+            <section class="vision">
+                <div class="sticky">
+                    <div class="sticky_title">
+                        <div class="bg">vision</div>
+                        <ul class='list'>
+                            <li>
+                                우리는 자연의 이야기에 귀 기울이며, 해답을 찾아갑니다.
+                            </li>
+                            <li>
+                                습지 보전, 소중한 자연을 지키는 작은 실천에서 시작됩니다.
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="s_tit">
+                        <h2 class="">our value & vision</h2>
+                        <p>습지 보호를 통해<br>
+                            자연과 사람이 함께 살아가는 균형을 추구합니다.
+                        </p>
+                    </div>
+                    <div class="sticky_con">
+                        <ul class="card_frame">
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>보전</h3>
+                                    <p>습지 생태계의 가치를 인식하고 <br>체계적으로 보호합니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>연구</h3>
+                                    <p>과학적 접근을 바탕으로<br>지속가능한 활용 방안을 모색합니다.</p>
+                                </div>
+                            </li>
+                            <li class="card">
+                                <div class="front"></div>
+                                <div class="back">
+                                    <div class="icon"></div>
+                                    <h3>공존</h3>
+                                    <p>인간과 자연의 조화로운 공존을 위한<br>정책과 실천을 제안합니다.</p>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="special_product">
+                <div class="s_tit">
+                    <h2 class="">Photo Gallery</h2>
+                    <p>당신의 시선으로 만나는 살아있는 습지
+                    </p>
+                </div><!-- //.s_tit -->
+                <ul>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p1.png" alt=""></div>
+                        <div class="name">
+                            <strong>우포늪</strong>
+                            <p>생태계가 잘 보존된 내륙 습지</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p2.png" alt=""></div>
+                        <div class="name">
+                            <strong>순천만 습지</strong>
+                            <p>갈대밭과 철새로 유명한 습지</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p3.png" alt=""></div>
+                        <div class="name">
+                            <strong>창녕 따오기복원센터</strong>
+                            <p>따오기 복원 중심지</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p4.png" alt=""></div>
+                        <div class="name">
+                            <strong>대암산 용늪</strong>
+                            <p>국내 최초 람사르 습지</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p5.png" alt=""></div>
+                        <div class="name">
+                            <strong>철원 평야 습지</strong>
+                            <p>두루미 서식지로 유명</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p6.png" alt=""></div>
+                        <div class="name">
+                            <strong>고창 운곡습지</strong>
+                            <p>자연생태 복원 모범 사례</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="1">
+                        <div class="img_box"><img src="img/p7.png" alt=""></div>
+                        <div class="name">
+                            <strong>제주 물영아리오름</strong>
+                            <p>분화구형 습지의 대표</p>
+                        </div>
+                    </li>
+                    <li data-scroll data-scroll-speed="3">
+                        <div class="img_box"><img src="img/p8.png" alt=""></div>
+                        <div class="name">
+                            <strong>한강 하구 습지</strong>
+                            <p>멸종위기종 서식처</p>
+                        </div>
+                    </li>
+                </ul>
+            </section><!-- special_product -->
+
+            <section class="business">
+                <div class="s_tit">
+                    <h2>Our Projects</h2>
+                    <p>한국습지학회의<br>주요 활동을 소개합니다.</p>
+                    </p>
+                    <div class="btn">
+                        <span class="material-symbols-outlined prev">
+                            west
+                        </span>
+                        <span class="material-symbols-outlined next">
+                            east
+                        </span>
+                    </div>
+                </div><!-- //.s_tit -->
+
+                <div class="slide swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b1.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span class="material-symbols-outlined">
+                                        forest
+                                    </span>
+                                    <span>academic presentation contest</span>
+                                    <h3>2025년 한국습지학회<br>정기학술발표대회</h3>
+                                    <p>습지를 향한 지식의 흐름이 모이는 자리, <br>
+                                        지속가능한 미래를 위한 학술 교류의 장입니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#생태연구</li>
+                                            <li>#학제협력</li>
+                                            <li>#지속가능성</li>
+                                            <li>#현장사례</li>
+                                            <li>#정책제언</li>
+                                            <li>#지식공유</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b2.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span class="material-symbols-outlined">
+                                        forest
+                                    </span>
+                                    <span>semina</span>
+                                    <h3>세계 습지의 날<br>기념 세미나</h3>
+                                    <p>자연과 함께하는 하루, <br>
+                                        습지의 가치를 다시 생각합니다.”</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#람사르협약</li>
+                                            <li>#환경보전</li>
+                                            <li>#기념행사</li>
+                                            <li>#생태교육</li>
+                                            <li>#시민참여</li>
+                                            <li>#미래세대</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b3.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span class="material-symbols-outlined">
+                                        forest
+                                    </span>
+                                    <span>workshop</span>
+                                    <h3>습지 보전관리<br>합동 워크숍</h3>
+                                    <p>습지 보전을 위한 실천적 논의를 나눕니다다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#현장중심</li>
+                                            <li>#실천연구</li>
+                                            <li>#기관협력</li>
+                                            <li>#지식교류</li>
+                                            <li>#정책연계</li>
+                                            <li>#공동대응</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b4.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span class="material-symbols-outlined">
+                                        forest
+                                    </span>
+                                    <span>Journal of Wetlands Research</span>
+                                    <h3>한국습지학회지</h3>
+                                    <p>습지 생태계 전반에 대한 전문성과 학술성을 담은<br>
+                                        국내 유일의 습지 전문 학술지입니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#전문성</li>
+                                            <li>#생태학</li>
+                                            <li>#논문게재</li>
+                                            <li>#지속발간</li>
+                                            <li>#학술정보</li>
+                                            <li>#연구성과</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <div class="img_box"><img src="img/b5.png" alt=""></div>
+                                <div class="txt_box">
+                                    <span class="material-symbols-outlined">
+                                        forest
+                                    </span>
+                                    <span>international forum</span>
+                                    <h3>국제포럼</h3>
+                                    <p>지구적 시선에서 바라보는 습지,<br>
+                                        연결과 협력으로 해답을 찾습니다.</p>
+                                    <div class="tag">
+                                        <ul>
+                                            <li>#국제협력</li>
+                                            <li>#글로벌이슈</li>
+                                            <li>#지식공유</li>
+                                            <li>#환경정책</li>
+                                            <li>#전문가네트워크</li>
+                                            <li>#기후변화</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="vid">
+                <div class="s_tit">
+                    <h2 class="">지속가능한 생태 미래를 위한 습지 보호, <br>
+                        지금 우리가 함께해야 할 실천입니다.</h2>
+                    <p>습지는 생물다양성과 수문 순환을 유지하는 지구 생태계의 핵심 자산입니다.<br>
+                        한국습지학회는 과학적 연구와 사회적 인식 제고를 통해 습지의 공익적 가치를 확산해 나가고자 합니다.<br>
+                        한국습지학회는 생태학, 환경공학, 정책연구 등 다양한 분야의 협력을 통해<br>
+                        국내외 습지의 보호와 복원, 지속 가능한 이용 방안을 제시하고 있습니다.</p>
+                </div><!-- //.s_tit -->
+                <figure class="vid_box">
+                    <video src="img/vid1.mp4" loop autoplay muted playsinline></video>
+                </figure><!-- vid_box -->
+            </section><!-- vid -->
+
+            <section class="trust">
+                <div class="s_tit">
+                    <h2>About the Society & Connections</h2>
+                    <p>한국습지학회는 습지 보전과 생태 연구를 위한 전문 학술단체로,<br>학술적 정보 공유와 사회적 인식 확산을 위해 다양한 활동을 이어가고 있습니다.</p>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li class="sl1"><a href="#">
+                                <h3>학회소개</h3>
+                            </a></li>
+                        <li class="sl2"><a href="#">
+                                <h3>뉴스레터</h3>
+                            </a></li>
+                        <li class="sl3"><a href="#">
+                                <h3>오시는 길</h3>
+                            </a></li>
+                    </ul>
+                </div>
+            </section><!-- trust -->
+
+            <section class="news">
+                <div class="s_tit">
+                    <h2>Latest Updates</h2>
+                    <p>한국습지학회의의<br>소식을 확인하세요.</p>
+                    <a href="#" class="more">View More &gt;</a>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="con swiper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t1.png" alt=""></div>
+                                <p class="txt">
+                                    『Water&Tech INSIGHT』 제1호 발간물
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t2.png" alt=""></div>
+                                <p class="txt">
+                                    2025년 국가물관리위원회 제1차 정기세미나 홍보
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t3.png" alt=""></div>
+                                <p class="txt">
+                                    2025 기후변화 생태면적률 제도 국회포럼 안내
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t4.png" alt=""></div>
+                                <p class="txt">
+                                    가뭄 심포지엄 안내
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t5.png" alt=""></div>
+                                <p class="txt">
+                                    2025년 식물관리위원회 제3차 정기세미나 홍보
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t6.png" alt=""></div>
+                                <p class="txt">
+                                    2025년도 물국토연구본부 성과보고회
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t7.png" alt=""></div>
+                                <p class="txt">
+                                    2025 Water Positive Korea 국제포럼
+                                </p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide"><a href="#">
+                                <div class="img_box"><img src="img/t8.png" alt=""></div>
+                                <p class="txt">
+                                    ICOBTE & ICHMET 2025 국제학술대회 안내
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section><!-- news -->
+
+        </main>
+        <footer>
+            <h3>Contact Us</h3>
+            <p><span>습지 보호와 연구를 위한 소중한 의견을 기다립니다.<br>
+                언제든지</span> 한국습지학회<span>와 함께하세요.</span></p>
+        </footer>
+    </div><!-- wrap -->
+</body>
+
+</html>

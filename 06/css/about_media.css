@@ -1,0 +1,149 @@
+@media screen and (max-width: 1200px) {
+    #main .top img {
+        display: none;
+    }
+
+    #main .chara .beam {
+        display: none;
+    }
+ 
+    #main .txt {
+        height: 100vh;
+        align-items: center;
+    }
+
+    #main img.bottom {
+        display: none;
+    }
+
+    #resume .paper .deco {
+        display: none;
+    }
+
+    #resume .paper .txt img {
+        display: none;
+    }
+
+    #about {
+        height: 250vh;
+    }
+
+    #about .tit {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #about .cartoon {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        width: 100%;
+        height: 90%;
+    }
+
+    #about .cartoon .cut1 {
+        width: 100vw;
+        height: 60%;
+    }
+
+    #about .cartoon .cut1 .C11 {
+        left: 2%; top: 12%;
+    }
+
+    #about .cartoon .cut1 .cut1A {
+        width: 100%;
+        height: 100%;
+        position: unset;
+        background: url(../img/about/cut1A.svg) no-repeat center;
+    }
+    #about .cartoon .cut1 .C12{
+        bottom: 12%; right: 2%;
+    }
+
+    #about .cartoon .cut_right{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 6%;
+    }
+
+    #about .cartoon .cut_right .cut2{
+        width: 100%;
+        height: inherit;
+    }
+
+    #about .cartoon .cut2 .C21{
+        left: 2%;
+    }
+
+    #about .cartoon .cut_right .cut2A {
+        position: unset;
+        background: url(../img/about/cut2A.svg) no-repeat center;
+    }
+
+    #about .cartoon .cut2 .C22{
+        bottom: -4%;
+    }
+    #about .cartoon .cut3 .C31{
+        bottom: -10%;
+        right: 2%;
+    }
+    #about .cartoon .cut_right .cut3A {
+        position: unset;
+        background: url(../img/about/cut3A.svg) no-repeat center;
+    }
+    #contact .img .bottom_frame{
+        display: none;
+    }
+    #contact{
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+  
+    #resume {
+        height: 150vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 24%;
+    }
+
+    #resume .skill {
+        position: unset;
+    }
+
+    #resume .skill ul {
+        flex-direction: row;
+    }
+
+    #resume .paper {
+        justify-content: center;
+        gap: 60px;
+        height: 60%;
+    }
+
+    #resume .paper .character img {
+        display: none;
+    }
+
+    #resume .paper .tit img {
+        display: none;
+    }
+
+    #resume .paper .txt {
+        position: unset;
+    }
+
+    #contact .cont_txt .bottom{
+        display: none;
+    }
+
+}
